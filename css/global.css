@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier Prime", monospace;
+}
+.navbar {
+  background-color: transparent;
+  position: absolute;
+}
+.navbar-toggler {
+  width: 60px;
+  height: 60px;
+}
+.navbar-toggler img {
+  width: 100%;
+}
+.nav-link {
+  color: #cfcfcf;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url(../images/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.hero-content {
+  /* border: 1px solid white; */
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.heading {
+  font-size: 2.5rem;
+}
+.subdeck {
+  font-size: 1rem;
+}
+.btn {
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.btn-outline-primary {
+  border-color: #fff;
+}
+.btn-outline-primary a {
+  color: #fff;
+  text-decoration: none;
+}
+.icons-container {
+  /* border: 1px solid white; */
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bi {
+  color: #fff;
+  font-size: 1.2rem;
+}
