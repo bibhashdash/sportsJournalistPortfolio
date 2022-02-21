@@ -296,7 +296,7 @@ h6 {
 }
 @media screen and (orientation: landscape) {
   .section {
-    height: 100vh;
+    height: 120vh;
   }
   .quote-mark {
     width: 30%;
