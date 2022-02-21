@@ -23,6 +23,7 @@ h6 {
   background-color: transparent;
   position: absolute;
 }
+
 .navbar-toggler {
   width: 60px;
   height: 60px;
@@ -32,6 +33,7 @@ h6 {
 }
 .nav-link {
   color: #cfcfcf;
+  text-shadow: black;
 }
 .section {
   width: 100vw;
@@ -152,9 +154,12 @@ h6 {
 }
 .newsrooms-grid {
   width: 70%;
+  display: flex;
+  justify-content: center;
 }
 .newsrooms-grid-item {
   display: flex;
+  justify-content: center;
 }
 .newsroom {
   margin-left: 10px;
@@ -211,4 +216,81 @@ h6 {
 .footer-text span {
   color: #0aa0e6;
   font-weight: 600;
+}
+
+@media all and (min-width: 768px) {
+  .section {
+    height: 100vh;
+  }
+  .collapse {
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+  .nav-link {
+    margin-right: 20px;
+  }
+  .hero {
+    padding-left: 10%;
+  }
+  .section-intro {
+    justify-content: space-evenly;
+  }
+  .news-article-image {
+    width: 500px;
+    height: auto;
+  }
+  .newsrooms-grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  /* .arrow-forward {
+    justify-self: center;
+  } */
+  .newsroom {
+    justify-self: center;
+    margin-left: 0;
+  }
+  .quote-mark {
+    width: 60%;
+  }
+  .quote-section-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .quote-attribution {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .quote-section-heading,
+  .quote-attribution {
+    transform: translateY(-160px);
+  }
+}
+
+@media all and (min-width: 992px) {
+  .section {
+    height: 90vh;
+  }
+  .news-article-text {
+    width: 70%;
+  }
+  .quote-section-heading,
+  .quote-attribution {
+    transform: translateY(-200px);
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .quote-section-heading,
+  .quote-attribution {
+    transform: translateY(-300px);
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .quote-mark {
+    width: 30%;
+  }
 }
