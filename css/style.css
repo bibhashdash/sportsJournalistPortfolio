@@ -96,6 +96,17 @@ h2 {
 .navbar {
   background-color: #2727278e;
   position: absolute;
+  z-index: 5;
+}
+@media all and (min-width: 768px) {
+  .navbar {
+    padding: 0 5%;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 .navbar-brand {
   font-family: "Sacramento", cursive;
@@ -113,8 +124,13 @@ h2 {
 .nav-link {
   color: #cfcfcf;
   text-shadow: black;
+  text-align: center;
+  color: rgb(52, 227, 233);
+  /* font-size: 2rem; */
 }
-
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
 .section-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
     url(../images/home-hero.jpg);
@@ -165,8 +181,15 @@ h2 {
 .section-newsrooms {
   align-items: center;
 }
+.newsrooms-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .newsrooms-grid {
   margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .arrow-forward {
   color: #272727;
@@ -174,14 +197,11 @@ h2 {
 }
 .newsrooms-grid-item {
   display: flex;
-  justify-self: center;
-  /* justify-content: space-between; */
 }
 .section-quote {
   align-items: center;
 }
 .quote-mark-container {
-  /* width: 50%; */
   text-align: center;
 }
 .quote-mark {
