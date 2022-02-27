@@ -152,6 +152,9 @@ li {
 .nav-link:hover {
   color: rgb(255, 255, 255);
 }
+.menu-flag {
+  color: rgb(52, 227, 233);
+}
 .section-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
     url(../images/home-hero.jpg);
