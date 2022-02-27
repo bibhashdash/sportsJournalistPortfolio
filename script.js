@@ -1,6 +1,6 @@
 const introSectionHeading = document.querySelector("#intro-section-heading");
 const introSectionTextContainer = document.querySelector(
-  ".intro-section-text-container"
+  "#intro-section-text-container"
 );
 const observer = new IntersectionObserver(function (entry) {
   if (entry[0].isIntersecting) {

@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  background-color: #e7e7e7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +24,11 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
+@media all and (min-width: 768px) {
+  .section {
+    padding: 5% 15%;
+  }
+}
 .section-heading {
   font-weight: 800;
   font-size: 3.5rem;
@@ -32,7 +38,7 @@ h2 {
   color: #fff;
 }
 .section-heading-secondary {
-  color: #272727;
+  color: #1a1a1a;
 }
 .section-leading-image {
   width: 162px;
@@ -48,7 +54,7 @@ h2 {
   color: #fff;
 }
 .section-text-secondary {
-  color: #808080;
+  color: #1a1a1a;
 }
 .news-article-image-container {
   margin: 1rem 0;
@@ -91,7 +97,12 @@ h2 {
   color: #272727;
 }
 .material-icons {
-  color: rgb(52, 227, 233);
+  color: rgb(54, 54, 54);
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
 }
 .navbar {
   background-color: #2727278e;
@@ -109,13 +120,13 @@ h2 {
     flex-direction: row;
     justify-content: flex-end;
   }
+  .nav-link {
+    margin: 0 10px;
+  }
 }
 @media all and (min-width: 1200px) {
   .navbar {
     padding: 20px 12%;
-  }
-  .nav-link {
-    margin: 0 10px;
   }
 }
 .navbar-brand {
@@ -154,10 +165,10 @@ h2 {
   justify-content: center;
 }
 .section-secondary-hero {
-  height: 500px;
+  height: 700px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url(../images/marcus-wallis-mUtQXjjLPbw-unsplash.jpg);
-  background-position: bottom;
+    url(../images/home-hero.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -190,7 +201,12 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.carousel {
+@media all and (min-width: 1200px) {
+  .about-intro-section-content {
+    padding: 0 10%;
+  }
+}
+.icons-carousel {
   margin-top: 2rem;
   width: 80px;
 }
@@ -249,6 +265,9 @@ h2 {
   font-size: 2rem;
   margin: 0 1rem;
 }
+.icon-white {
+  color: #fff;
+}
 .section-specialities {
   align-items: center;
 }
@@ -267,7 +286,7 @@ h2 {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.8)
     ),
-    url(../images/jose-pablo-dominguez-a14l5pHzf90-unsplash.jpg);
+    url(../images/kevin-et-laurianne-langlais-yCg-sSDyxsE-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -295,6 +314,17 @@ h2 {
 .about-cta-icon {
   color: #fff;
 }
+.portfolio-carousel-inner {
+  text-align: center;
+}
+.portfolio-carousel-item {
+  text-align: center;
+}
+.portfolio-item-text-container {
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
 .footer {
   height: 200px;
   display: flex;
