@@ -100,12 +100,22 @@ h2 {
 }
 @media all and (min-width: 768px) {
   .navbar {
-    padding: 0 5%;
+    padding: 20px 5%;
+
+    background-color: transparent;
   }
   .navbar-collapse {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  }
+}
+@media all and (min-width: 1200px) {
+  .navbar {
+    padding: 20px 12%;
+  }
+  .nav-link {
+    margin: 0 10px;
   }
 }
 .navbar-brand {
@@ -143,7 +153,19 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
-
+.section-secondary-hero {
+  height: 500px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url(../images/marcus-wallis-mUtQXjjLPbw-unsplash.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 1200px) {
+  .section-hero {
+    padding: 0 15%;
+  }
+}
 .hero-heading {
   font-size: 1.5rem;
   margin: 1rem 0;
@@ -226,6 +248,52 @@ h2 {
   color: #272727;
   font-size: 2rem;
   margin: 0 1rem;
+}
+.section-specialities {
+  align-items: center;
+}
+.specialities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.specialities-icon {
+  width: 100px;
+}
+.section-about-cta {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/jose-pablo-dominguez-a14l5pHzf90-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-cta-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-cta-content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-cta-content-bottom {
+  margin-bottom: 2rem;
+}
+.about-cta-icon {
+  color: #fff;
 }
 .footer {
   height: 200px;
