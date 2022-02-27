@@ -96,9 +96,7 @@ h2 {
 .btn-outline-secondary a {
   color: #272727;
 }
-.material-icons {
-  color: rgb(54, 54, 54);
-}
+
 ul,
 li {
   list-style: none;
@@ -141,7 +139,9 @@ li {
 .navbar-toggler img {
   width: 100%;
 }
-
+.material-icons {
+  color: rgb(54, 54, 54);
+}
 .nav-link {
   color: #cfcfcf;
   text-shadow: black;
