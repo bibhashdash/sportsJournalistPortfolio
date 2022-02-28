@@ -1,8 +1,21 @@
+:root {
+  --main-bg-color: #f3f4f5;
+  --secondary-bg-color: #242e37;
+
+  --main-color: #f3f4f5;
+  --secondary-color: #242e37;
+
+  --button: #c1292e;
+  --red: #c1292e;
+}
+.active {
+  color: var(--main-color);
+}
 html {
   box-sizing: border-box;
 }
 body {
-  background-color: #e7e7e7;
+  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +27,7 @@ h2 {
   font-family: "Sacramento", cursive;
 }
 .dark-background {
-  background-color: #272727;
+  background-color: var(--secondary-bg-color);
 }
 .section {
   width: 100vw;
@@ -35,10 +48,10 @@ h2 {
   margin: 1rem 0;
 }
 .section-heading-primary {
-  color: #fff;
+  color: var(--main-color);
 }
 .section-heading-secondary {
-  color: #1a1a1a;
+  color: var(--secondary-color);
 }
 .section-leading-image {
   width: 162px;
@@ -51,11 +64,11 @@ h2 {
   margin: 1rem 0;
 }
 .section-text-primary {
-  color: #fff;
+  color: var(--main-color);
   text-shadow: #000000;
 }
 .section-text-secondary {
-  color: #1a1a1a;
+  color: var(--secondary-color);
 }
 .news-article-image-container {
   margin: 1rem 0;
@@ -78,24 +91,28 @@ h2 {
   text-decoration: none;
 }
 .btn-outline-primary {
-  border-color: #fff;
+  background-color: var(--button);
+  border: none;
 }
 .btn-outline-primary:hover {
   background-color: #000000;
   border-color: #fff;
 }
+.btn-outline-secondary {
+  border-color: var(--button);
+  border-width: 2px;
+}
 .btn-outline-secondary:hover {
   background-color: #bebebe;
   border-color: transparent;
 }
-.btn-outline-secondary {
-  border-color: #272727;
-}
+
 .btn-outline-primary a {
   color: #fff;
 }
 .btn-outline-secondary a {
-  color: #272727;
+  color: var(--button);
+  font-weight: 600;
 }
 
 ul,
@@ -112,7 +129,7 @@ li {
   .navbar {
     padding: 20px 5%;
 
-    background-color: transparent;
+    /* background-color: transparent; */
   }
   .navbar-collapse {
     display: flex;
@@ -131,8 +148,13 @@ li {
 .navbar-brand {
   font-family: "Sacramento", cursive;
   text-decoration: none;
-  color: rgb(255, 203, 30);
+  color: var(--red);
+  font-weight: 700;
 }
+.navbar-brand:hover {
+  color: var(--red);
+}
+
 .navbar-toggler {
   width: 60px;
   height: 60px;
@@ -144,17 +166,20 @@ li {
   color: rgb(54, 54, 54);
 }
 .nav-link {
-  color: #cfcfcf;
-  text-shadow: black;
+  text-shadow: rgb(255, 255, 255);
   text-align: center;
-  color: rgb(255, 203, 30);
+  color: var(--red);
   /* font-size: 2rem; */
+  font-weight: 600;
+}
+.active {
+  color: var(--main-color);
 }
 .nav-link:hover {
   color: rgb(255, 255, 255);
 }
 .menu-flag {
-  color: rgb(255, 203, 30);
+  color: var(--red);
 }
 .section-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
