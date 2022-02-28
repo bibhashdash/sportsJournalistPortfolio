@@ -52,6 +52,7 @@ h2 {
 }
 .section-text-primary {
   color: #fff;
+  text-shadow: #000000;
 }
 .section-text-secondary {
   color: #1a1a1a;
@@ -130,7 +131,7 @@ li {
 .navbar-brand {
   font-family: "Sacramento", cursive;
   text-decoration: none;
-  color: rgb(52, 227, 233);
+  color: rgb(255, 203, 30);
 }
 .navbar-toggler {
   width: 60px;
@@ -146,14 +147,14 @@ li {
   color: #cfcfcf;
   text-shadow: black;
   text-align: center;
-  color: rgb(52, 227, 233);
+  color: rgb(255, 203, 30);
   /* font-size: 2rem; */
 }
 .nav-link:hover {
   color: rgb(255, 255, 255);
 }
 .menu-flag {
-  color: rgb(52, 227, 233);
+  color: rgb(255, 203, 30);
 }
 .section-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
@@ -285,9 +286,10 @@ li {
 .section-about-cta {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)
     ),
     url(../images/kevin-et-laurianne-langlais-yCg-sSDyxsE-unsplash.jpg);
   background-position: center;
@@ -327,7 +329,32 @@ li {
   margin: 0 auto;
   padding: 0 10%;
 }
-
+.section-form {
+  align-items: center;
+}
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+input {
+  height: 2rem;
+}
+input,
+textarea {
+  margin-bottom: 1rem;
+  border: #bebebe;
+  border-radius: 5px;
+  padding: 1% 5%;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.btn-form-submit {
+  align-self: center;
+}
 .footer {
   height: 200px;
   display: flex;
